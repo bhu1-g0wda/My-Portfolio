@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvan | Modern Tech Portfolio</title>
+    <meta name="description" content="Aesthetic and trendy tech portfolio showcasing skills and projects.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- tsParticles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- Background Elements -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">BHUVAN<span>.</span></a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-container reveal">
+            <div class="hero-content">
+                <h2 class="greeting">Hi, I'm</h2>
+                <h1 class="name"><span style="color: yellow;">Bhuvan Gowda</span></h1>
+                <p class="role">I build <span id="typewriter"></span></p>
+                <p class="bio">Passionate software developer crafting aesthetic, functional, and user-centric digital
+                    experiences.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://github.com/bhu1-g0wda" target="_blank" class="btn icon-btn" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub" class="invert-dark" width="24" height="24" style="object-fit: contain;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/bhu1-g0wda" target="_blank" class="btn icon-btn"
+                        aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                            alt="LinkedIn" width="24" height="24" style="object-fit: contain;">
+                    </a>
+                    <a href="https://leetcode.com/u/bhuvangowda284/" target="_blank" class="btn icon-btn"
+                        aria-label="LeetCode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#FFA116"
+                                d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.832s.513 2.85 1.494 3.831l4.332 4.364a5.33 5.33 0 0 0 3.824 1.495c1.496 0 2.85-.513 3.832-1.495l2.711-2.609c.515-.514.498-1.366-.037-1.901-.536-.535-1.387-.552-1.902-.038l-10.1-10.101c-.982-.982-2.338-1.494-3.832-1.494s-2.85.512-3.831 1.494l-2.504 2.467a5.055 5.055 0 0 1 1.337-2.445l2.636-2.609c.514-.514 1.366-.496 1.901.039.535.535.553 1.387.038 1.901z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.hackerrank.com/profile/bhuvangowda284" target="_blank" class="btn icon-btn"
+                        aria-label="HackerRank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#2EC866"
+                                d="M11.97 3.327L3.064 8.47v10.285l8.906 5.142 8.906-5.142V8.47l-8.906-5.143zm-2.028 12.388h-1.63L8.3 12.23H5.7l-.014 3.486H4.056V9.453H5.69l.013 3.535h2.607v-3.535h1.633v6.262zm8.796 0H14.7l-2.181-3.212h-.033v3.212h-1.618V9.453h1.618v3.297h.033l2.062-3.297h1.792l-2.457 3.65 2.822 4.612z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-wrap">
+                    <!-- ADD YOUR IMAGE HERE - Replace profile.jpg with your exact image path -->
+                    <img src="luffy.jpg" alt="Bhuvan Portfolio Avatar"
+                        onerror="this.src='https://images.unsplash.com/photo-1549692520-ACC6669E2F0C?auto=format&fit=crop&q=80&w=600&h=600';">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container reveal-bottom">
+            <h2 class="section-title" style="color: yellow;">About Me<span>.</span></h2>
+            <div class="about-grid glass-panel">
+                <div class="about-text reveal-left">
+                    <p>I'm a developer who bridges the gap between design and engineering. My focus is on creating web
+                        applications that not only function flawlessly but also provide an intuitive, delightful user
+                        experience.</p>
+                    <p>With a strong foundation in modern web technologies, I thrive in environments where creativity
+                        meets complex problem-solving. When I'm not coding, I'm exploring new UI trends or contributing
+                        to open-source.</p>
+                </div>
+                <!-- Placeholder for a stylized image or graphic -->
+                <div class="about-visual reveal-right">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <pre><code><span class="keyword">class</span> <span class="var">Developer</span>:
+    <span class="keyword">def</span> <span class="func">__init__</span>(<span class="keyword">self</span>):
+        <span class="keyword">self</span>.name = <span class="string">'Bhuvan'</span>
+        <span class="keyword">self</span>.role = <span class="string">'Software Engineer'</span>
+        <span class="keyword">self</span>.passions = [<span class="string">'AI'</span>, <span class="string">'Web Dev'</span>]
+        
+    <span class="keyword">def</span> <span class="func">build</span>(<span class="keyword">self</span>):
+        <span class="keyword">return</span> <span class="string">"Turning caffeine into code ☕"</span></code></pre>
+                        <div style="padding: 0 1.5rem 1.5rem 1.5rem; display: flex; justify-content: flex-start;">
+                            <a href="A00335918 Bhuvan Gowda MSc Software Design with AI.pdf" target="_blank"
+                                class="btn btn-outline btn-sm"
+                                style="display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; padding: 0.5rem 1rem; border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.05); color: white;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="margin-right: 6px;">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                View Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container reveal-bottom">
+            <div class="skills-header">
+                <h2 class="section-title" style="color: yellow;">Skills & Abilities<span>.</span></h2>
+            </div>
+
+            <div class="skills-grid-container glass-panel">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C/C++">
+                        <span>C</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                            alt="PyTorch">
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+                            alt="scikit-learn">
+                        <span>scikit-learn</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="ReactJS">
+                        <span>ReactJS</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                            alt="NodeJS" style="background-color: white; border-radius: 4px; padding: 2px;">
+                        <span>NodeJS</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                            alt="ExpressJS" class="invert-dark">
+                        <span>ExpressJS</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                            alt="MySQL" style="background-color: white;border-radius: 4px; padding: 2px;">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                            alt="Flask" class="invert-dark">
+                        <span>Flask</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                            alt="FastAPI">
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub" class="invert-dark">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                            alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                            alt="AWS" style="background-color: white; border-radius: 4px; padding: 2px;">
+                        <span>AWS</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                            alt="Kubernetes">
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg"
+                            alt="RHEL">
+                        <span>RHEL</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Linux">
+                        <span>Linux</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+                            alt="Jenkins">
+                        <span>Jenkins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container reveal-bottom">
+            <h2 class="section-title" style="color: yellow;">Education<span>.</span></h2>
+            <div class="timeline">
+                <!-- Master's Degree -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2025 - 2026</span>
+                        <h3>Master of Science in Software design with AI</h3>
+                        <h4>Technological University of the Shannon: Midlands Midwest</h4>
+                        <p style="margin-top: 0.5rem; color: var(--text-secondary);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 4px;">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>Athlone, Ireland</p>
+                        <p>Grade 1:1</p>
+                        <p>Specialized in Artificial Intelligence and Advanced Software Engineering. Completed a thesis
+                            on scalable web architectures.</p>
+                    </div>
+                </div>
+                <!-- Bachelor's Degree -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2021 - 2025</span>
+                        <h3>Bachelor of Computer Science and Engineering</h3>
+                        <h4>Acharya Institute Of Technology</h4>
+                        <p style="margin-top: 0.5rem; color: var(--text-secondary);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 4px;">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>Bengaluru, India</p>
+                        <p>CGPA: 9.23</p>
+                        <p>Foundation in algorithms, data structures, and full-stack web development. Participated in
+                            multiple hackathons and led the coding club.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container reveal-bottom">
+            <h2 class="section-title" style="color: yellow;">Selected Works<span>.</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel">
+                    <div class="project-img-placeholder gradient-1">
+                        <span>SQL Copilot</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>SQL Copilot</h3>
+                        <p>An AI-integrated database assistant. Users can connect securely to a SQL database and ask
+                            questions in natural language. The AI instantly translates text into optimized SQL queries,
+                            and returns both the exact query used and the resulting changes.</p>
+                        <div class="project-tech">
+                            <span>React + Vite</span>
+                            <span>FastAPI</span>
+                            <span>Claude AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
+                            <a href="https://github.com/bhu1-g0wda/SQL-Copilot.git" target="_blank"
+                                class="btn btn-sm icon-btn">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="GitHub" class="invert-dark" width="18" height="18"
+                                    style="object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel">
+                    <div class="project-img-placeholder gradient-2">
+                        <span>EquiShare App</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>EquiShare: Expense Tracker App</h3>
+                        <p>A full-stack expense tracking and splitting application. Deployed on AWS with load balancing,
+                            featuring
+                            seamless group management and settlement tracking with usage tracking and next month expense
+                            prediction.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>AWS</span>
+                            <span>React</span>
+                            <span>MongoDB</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
+                            <a href="#" class="btn btn-sm icon-btn">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="GitHub" class="invert-dark" width="18" height="18"
+                                    style="object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel">
+                    <div class="project-img-placeholder gradient-1">
+                        <!-- Reusing gradient-1 for now, can adjust CSS if needed -->
+                        <span>ChatApp</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Real-time Chat Application</h3>
+                        <p>A full-stack, real-time messaging platform supporting direct messaging, online status
+                            tracking, and media sharing.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.io</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
+                            <a href="https://github.com/bhu1-g0wda/ChatriX-Real-Time-Chat-Application.git"
+                                target="_blank" class="btn btn-sm icon-btn">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="GitHub" class="invert-dark" width="18" height="18"
+                                    style="object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-panel">
+                    <div class="project-img-placeholder gradient-2"> <!-- Reusing gradient-2 for now -->
+                        <span>Task Management App</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>TaskFlow Pro</h3>
+                        <p>A collaborative project management tool inspired by Kanban boards, featuring real-time
+                            updates and drag-and-drop mechanics.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline">Live Demo</a>
+                            <a href="#" class="btn btn-sm icon-btn">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="GitHub" class="invert-dark" width="18" height="18"
+                                    style="object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-container" style="margin-top: 4rem; text-align: center;">
+                <a href="projects.html" class="btn btn-primary btn-lg">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container reveal-bottom">
+            <h2 class="section-title" style="color: yellow;">Get in Touch<span>.</span></h2>
+
+            <div class="contact-container glass-panel">
+                <div class="contact-content">
+                    <p>I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll
+                        try my best to get back to you!</p>
+
+                    <ul class="contact-info-list" style="list-style: none; padding: 0; margin-top: 2rem;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--neon-cyan)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>bhuvangowda284@gmail.com</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--neon-purple)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Bengaluru, India</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" action="mailto:bhuvangowda284@gmail.com" method="post"
+                        enctype="text/plain">
+                        <div class="form-group">
+                            <div class="field">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="field">
+                                <input type="tel" name="phone" placeholder="Phone">
+                            </div>
+                            <div class="message">
+                                <textarea name="message" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit" class="btn btn-primary">
+                                Submit <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px;">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bhuvan. Designed & Built with ❤️ and code.</p>
+    </footer>
+
+    <!-- tsParticles Library -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.9.3/tsparticles.preset.links.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
