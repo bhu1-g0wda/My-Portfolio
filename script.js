@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const typewriterElement = document.getElementById('typewriter');
     if (typewriterElement) {
         const phrases = [
-            'Full-Stack Engineering.',
-            'AI-Powered Applications.',
-            'Scalable Cloud Infrastructure.'
+            'Smart Software.',
+            'AI Solutions.',
+            'Cloud Systems.'
         ];
 
         let phraseIndex = 0;
