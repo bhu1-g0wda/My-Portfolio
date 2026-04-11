@@ -763,9 +763,9 @@ h4 {
 
 .project-tech span {
     font-size: 0.8rem;
-    color: var(--neon-purple);
+    color: yellow;
     font-family: monospace;
-    background: rgba(192, 132, 252, 0.1);
+    background: rgba(255, 255, 0, 0.1);
     padding: 2px 8px;
     border-radius: 4px;
 }
