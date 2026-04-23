@@ -138,12 +138,17 @@ h4 {
     align-items: center;
     padding: 1.5rem 5%;
     z-index: 1000;
-    transition: var(--transition);
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-bottom: 1px solid transparent;
+    transition: padding 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), backdrop-filter 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-backdrop-filter 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .navbar.scrolled {
-    background: rgba(3, 7, 18, 0.8);
+    background-color: rgba(3, 7, 18, 0.8);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--glass-border);
     padding: 1rem 5%;
 }
